@@ -1,64 +1,103 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>F1 Project</title>
+		<title>F1 Project – Óscar Luque Porca</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Proyecto F1: aplicación web con información de pilotos y comparativa de resultados usando la API de OpenF1." />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">Portfolio Personal</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Inicio</a></li>
-						<li><a href="weather.html">Weather App</a></li>
-						<li><a href="f1_project.html" class="active">F1 Project</a></li>
-					</ul>
-				</nav>
-			</header>
+		<header id="header">
+			<a href="index.html" class="title">Óscar Luque Porca</a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="weather.html">Weather App</a></li>
+					<li><a href="f1_project.html" class="active">F1 Project</a></li>
+				</ul>
+			</nav>
+		</header>
 
 		<!-- Wrapper -->
-			<div id="wrapper">
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">F1 Project</h1>
-							<span class="image fit"><img src="images/image.png" alt="Proyecto F1" /></span>
-							<p>Este fue mi proyecto para el primer bloque del máster que actualmente estoy cursando, donde teníamos que poner en práctica los conocimientos adquiridos de HTML, CSS y JS, pudiendo también utilizar BootStrap.</p>
-                            <p>Teníamos que realizar obligatoriamente una página de cookies que tenía que ser aceptada para poder seguir visitando el resto de la página, como muestro en la siguiente imagen.</p>
-                            <span class="image fit"><img src="images/cookies_f1.png" alt="Cookies" /></span>
-                            <p>Y también una página de contacto que se muestra ahora.</p>
-                            <span class="image fit"><img src="images/contacto_f1.png" alt="Contacto" /></span>
-                            <p>Lo siguiente, era una página con todos los pilotos que hay actualmente en la parrilla de la F1, utilizando la API de OpenF1, que es gratuita, pero tiene una desventaja, cada vez que haya una sesión en activo, no se podrá acceder a la API a no ser que deposites dinero.</p>
-							<span class="image fit"><img src="images/drivers.png" alt="Pilotos" /></span>
-							<p>Por último, el comparador de los resultados de la última carrera de dos pilotos a seleccionar, por ejemplo en la imagen siguiente, comparamos los resultados de Verstappen con los de Alonso.</p>
-							<span class="image fit"><img src="images/comparativa.png" alt="Comparativa" /></span>
-						</div>
-					</section>
+		<div id="wrapper">
+			<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<h1 class="major">F1 Project</h1>
 
-			</div>
+					<p>
+						Aplicación web desarrollada como proyecto final del primer bloque del Máster en Full Stack Development,
+						con el objetivo de consolidar los conocimientos adquiridos de HTML, CSS y JavaScript, haciendo uso
+						también de Bootstrap. La aplicación consume la API pública de
+						<a href="https://openf1.org/" target="_blank">OpenF1</a> para obtener datos reales de la temporada.
+					</p>
+
+					<h2>Tecnologías utilizadas</h2>
+					<ul>
+						<li><strong>HTML5 y CSS3</strong> – Estructura y estilos de la interfaz</li>
+						<li><strong>JavaScript (ES6+)</strong> – Lógica y consumo de la API</li>
+						<li><strong>Bootstrap</strong> – Maquetación responsive</li>
+						<li><strong>OpenF1 API</strong> – Fuente de datos de pilotos y resultados</li>
+					</ul>
+
+					<h2>Funcionalidades</h2>
+
+					<h3>Aviso de cookies</h3>
+					<p>
+						La aplicación incluye una página de aviso de cookies que el usuario debe aceptar antes de acceder
+						al contenido, cumpliendo con las buenas prácticas de privacidad web.
+					</p>
+					<span class="image fit"><img src="images/cookies_f1.png" alt="Pantalla de aviso de cookies" /></span>
+
+					<h3>Página de contacto</h3>
+					<p>
+						Formulario de contacto integrado en la aplicación para que los usuarios puedan comunicarse
+						directamente.
+					</p>
+					<span class="image fit"><img src="images/contacto_f1.png" alt="Página de contacto" /></span>
+
+					<h3>Parrilla de pilotos</h3>
+					<p>
+						Listado completo de los pilotos que participan en la temporada actual de Fórmula 1, con información
+						obtenida en tiempo real desde la API de OpenF1. Cabe destacar que esta API es gratuita pero presenta
+						una limitación: durante sesiones en activo (carreras, clasificaciones, etc.) el acceso requiere
+						una suscripción de pago.
+					</p>
+					<span class="image fit"><img src="images/drivers.png" alt="Parrilla de pilotos de F1" /></span>
+
+					<h3>Comparador de resultados</h3>
+					<p>
+						Herramienta de comparación que permite seleccionar dos pilotos y visualizar sus resultados
+						en la última carrera disputada. En el ejemplo siguiente se muestra la comparativa entre
+						Verstappen y Alonso.
+					</p>
+					<span class="image fit"><img src="images/comparativa.png" alt="Comparativa de resultados entre pilotos" /></span>
+
+				</div>
+			</section>
+		</div>
 
 		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Oscar Luque Porca. All rights reserved.</li>
-					</ul>
-				</div>
-			</footer>
+		<footer id="footer" class="wrapper alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>&copy; Óscar Luque Porca. All rights reserved.</li>
+				</ul>
+			</div>
+		</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
