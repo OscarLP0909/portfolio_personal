@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>TO-DO List – Óscar Luque Porca</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="TO-DO List: aplicación fullstack con frontend en HTML/CSS/JS y backend en Node.js + Express, desplegada en Netlify y Render." />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="title">Óscar Luque Porca</a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="weather.html">Weather App</a></li>
+					<li><a href="f1_project.html">F1 Project</a></li>
+					<li><a href="to-do-list.html" class="active">TO-DO List</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<h1 class="major">TO-DO List</h1>
+
+					<p>
+						Aplicación web fullstack de gestión de tareas, donde el usuario puede organizar
+						su día a día creando, editando, completando y eliminando tareas. A diferencia de
+						los proyectos anteriores, este cuenta con un backend propio desarrollado en Node.js
+						que persiste los datos en una base de datos, lo que lo convierte en una aplicación
+						completa de principio a fin.
+					</p>
+
+					<h2>Tecnologías utilizadas</h2>
+					<ul>
+						<li><strong>Frontend:</strong> HTML5, CSS3, JavaScript (ES6+), Bootstrap</li>
+						<li><strong>Backend:</strong> Node.js, Express.js</li>
+						<li><strong>Seguridad:</strong> Helmet (cabeceras HTTP seguras), Express-rate-limit (protección contra abuso de la API)</li>
+						<li><strong>Persistencia:</strong> Base de datos para almacenamiento de tareas</li>
+						<li><strong>Despliegue:</strong> Frontend en Netlify, Backend en Render</li>
+					</ul>
+
+					<h2>Funcionalidades</h2>
+
+					<h3>Gestión de tareas</h3>
+					<p>
+						La aplicación permite al usuario realizar las operaciones CRUD completas sobre sus tareas:
+						crearlas, editarlas, marcarlas como completadas y eliminarlas. Todos los cambios se
+						persisten en la base de datos, por lo que la información se mantiene entre sesiones.
+					</p>
+
+					<h3>Backend seguro</h3>
+					<p>
+						El servidor está protegido con dos capas de seguridad adicionales. Helmet configura
+						automáticamente las cabeceras HTTP para proteger la aplicación frente a vulnerabilidades
+						web comunes, mientras que Express-rate-limit previene ataques de fuerza bruta limitando
+						el número de peticiones que un cliente puede realizar en un periodo de tiempo.
+					</p>
+
+					<h3>Despliegue en producción</h3>
+					<p>
+						El proyecto está desplegado en un entorno real: el frontend está alojado en
+						<strong>Netlify</strong> y el backend en <strong>Render</strong>, simulando una
+						arquitectura de producción con servicios independientes y comunicación mediante API REST.
+					</p>
+
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer" class="wrapper alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>&copy; Óscar Luque Porca. All rights reserved.</li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
