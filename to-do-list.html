@@ -32,11 +32,11 @@
 					<h1 class="major">TO-DO List</h1>
 
 					<p>
-						Aplicación web fullstack de gestión de tareas, donde el usuario puede organizar
-						su día a día creando, editando, completando y eliminando tareas. A diferencia de
-						los proyectos anteriores, este cuenta con un backend propio desarrollado en Node.js
-						que persiste los datos en una base de datos, lo que lo convierte en una aplicación
-						completa de principio a fin.
+						Aplicación web fullstack de gestión de tareas con sistema de autenticación propio.
+						El usuario puede registrarse, iniciar sesión y gestionar sus tareas de forma
+						completamente personalizada. Cuenta con un backend desarrollado en Node.js que
+						persiste los datos en una base de datos, convirtiéndolo en el primer proyecto
+						fullstack completo del portfolio.
 					</p>
 
 					<h2>Tecnologías utilizadas</h2>
@@ -44,32 +44,63 @@
 						<li><strong>Frontend:</strong> HTML5, CSS3, JavaScript (ES6+), Bootstrap</li>
 						<li><strong>Backend:</strong> Node.js, Express.js</li>
 						<li><strong>Seguridad:</strong> Helmet (cabeceras HTTP seguras), Express-rate-limit (protección contra abuso de la API)</li>
-						<li><strong>Persistencia:</strong> Base de datos para almacenamiento de tareas</li>
+						<li><strong>Persistencia:</strong> Base de datos para almacenamiento de usuarios y tareas</li>
 						<li><strong>Despliegue:</strong> Frontend en Netlify, Backend en Render</li>
 					</ul>
 
 					<h2>Funcionalidades</h2>
 
+					<h3>Autenticación de usuarios</h3>
+					<p>
+						La aplicación cuenta con un sistema de autenticación completo. El usuario puede
+						iniciar sesión con sus credenciales desde la pantalla de login.
+					</p>
+					<span class="image fit"><img src="images/login_page.png" alt="Pantalla de login" /></span>
+
+					<p>
+						Si aún no tiene cuenta, puede registrarse introduciendo sus datos en el formulario
+						de registro.
+					</p>
+					<span class="image fit"><img src="images/register.png" alt="Pantalla de registro" /></span>
+
+					<p>
+						En caso de haber olvidado las credenciales, la aplicación dispone de una pantalla
+						de recuperación de acceso.
+					</p>
+					<span class="image fit"><img src="images/forgot.png" alt="Pantalla de recuperación de contraseña" /></span>
+
 					<h3>Gestión de tareas</h3>
 					<p>
-						La aplicación permite al usuario realizar las operaciones CRUD completas sobre sus tareas:
-						crearlas, editarlas, marcarlas como completadas y eliminarlas. Todos los cambios se
-						persisten en la base de datos, por lo que la información se mantiene entre sesiones.
+						Una vez autenticado, el usuario accede al listado de sus tareas, donde puede
+						visualizar todas las pendientes y completadas.
 					</p>
+					<span class="image fit"><img src="images/tasks.png" alt="Listado de tareas" /></span>
 
-					<h3>Backend seguro</h3>
 					<p>
-						El servidor está protegido con dos capas de seguridad adicionales. Helmet configura
-						automáticamente las cabeceras HTTP para proteger la aplicación frente a vulnerabilidades
-						web comunes, mientras que Express-rate-limit previene ataques de fuerza bruta limitando
-						el número de peticiones que un cliente puede realizar en un periodo de tiempo.
+						Puede crear nuevas tareas a través del formulario de creación.
 					</p>
+					<span class="image fit"><img src="images/new_task.png" alt="Creación de una nueva tarea" /></span>
 
-					<h3>Despliegue en producción</h3>
 					<p>
-						El proyecto está desplegado en un entorno real: el frontend está alojado en
-						<strong>Netlify</strong> y el backend en <strong>Render</strong>, simulando una
-						arquitectura de producción con servicios independientes y comunicación mediante API REST.
+						Las tareas existentes pueden editarse en cualquier momento para actualizar su
+						contenido o estado.
+					</p>
+					<span class="image fit"><img src="images/edit_task.png" alt="Edición de una tarea" /></span>
+
+					<p>
+						El usuario también puede eliminar tareas, con una confirmación previa para
+						evitar borrados accidentales.
+					</p>
+					<span class="image fit"><img src="images/delete_task.png" alt="Confirmación de eliminación de tarea" /></span>
+					<span class="image fit"><img src="images/deleted_task.png" alt="Tarea eliminada correctamente" /></span>
+
+					<h3>Backend seguro y despliegue en producción</h3>
+					<p>
+						El servidor está protegido con Helmet, que configura automáticamente las cabeceras
+						HTTP frente a vulnerabilidades web comunes, y con Express-rate-limit, que previene
+						ataques de fuerza bruta limitando las peticiones por cliente. El proyecto está
+						desplegado en un entorno real con el frontend en <strong>Netlify</strong> y el
+						backend en <strong>Render</strong>, comunicándose mediante API REST.
 					</p>
 
 				</div>
