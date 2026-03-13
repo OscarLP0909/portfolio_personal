@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Gestión de Empleados – Óscar Luque Porca</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Aplicación fullstack de gestión de empleados con React, TypeScript, Node.js, Express y MongoDB." />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="title">Óscar Luque Porca</a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="weather.html">Weather App</a></li>
+					<li><a href="f1_project.html">F1 Project</a></li>
+					<li><a href="to-do-list.html">TO-DO List</a></li>
+					<li><a href="empleados.html" class="active">Gestión de Empleados</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<h1 class="major">Gestión de Empleados</h1>
+
+					<p>
+						Aplicación web fullstack para la gestión integral de empleados y contratos dentro
+						de una organización. Desarrollada con React y TypeScript en el frontend y Node.js
+						con Express en el backend, representa el proyecto más completo del portfolio, incorporando
+						autenticación con roles, aprobación de contratos, reportes con gráficos, exportación
+						a PDF y un sistema de auditoría de cambios.
+					</p>
+
+					<h2>Tecnologías utilizadas</h2>
+					<ul>
+						<li><strong>Frontend:</strong> React, TypeScript, Bootstrap</li>
+						<li><strong>Backend:</strong> Node.js, Express.js</li>
+						<li><strong>Base de datos:</strong> MongoDB</li>
+						<li><strong>Otras:</strong> Generación de PDF, librerías de gráficos</li>
+					</ul>
+
+					<h2>Funcionalidades</h2>
+
+					<h3>Dashboard</h3>
+					<p>
+						La pantalla principal ofrece un resumen visual del estado de la aplicación, con
+						indicadores clave sobre empleados, contratos y actividad reciente, acompañados
+						de gráficos para facilitar la toma de decisiones.
+					</p>
+					<span class="image fit"><img src="images/Dashboard_1.png" alt="Dashboard principal con resumen e indicadores" /></span>
+					<span class="image fit"><img src="images/Dashboard_2.png" alt="Dashboard con gráficos de actividad" /></span>
+
+					<h3>Gestión de empleados</h3>
+					<p>
+						El módulo de empleados permite visualizar el listado completo del personal,
+						con opciones de búsqueda y filtrado para localizar registros rápidamente.
+					</p>
+					<span class="image fit"><img src="images/Empleados.png" alt="Listado de empleados" /></span>
+
+					<p>
+						Desde el mismo módulo se pueden dar de alta nuevos empleados mediante un
+						formulario de creación completo.
+					</p>
+					<span class="image fit"><img src="images/Nuevo_Empleado.png" alt="Formulario de creación de empleado" /></span>
+
+					<h3>Gestión de contratos</h3>
+					<p>
+						La aplicación incluye un módulo dedicado a la gestión de contratos, donde se
+						pueden consultar todos los contratos activos y su información asociada.
+					</p>
+					<span class="image fit"><img src="images/Contratos.png" alt="Listado de contratos" /></span>
+
+					<p>
+						Los nuevos contratos se crean a través de un formulario específico que recoge
+						todos los datos necesarios antes de pasar por el flujo de aprobación.
+					</p>
+					<span class="image fit"><img src="images/Nuevo_Contrato.png" alt="Formulario de creación de contrato" /></span>
+
+					<h3>Aprobaciones</h3>
+					<p>
+						Los nuevos contratos no se activan de forma inmediata, sino que pasan por un
+						flujo de aprobación donde los usuarios con los permisos necesarios pueden
+						revisar y aprobar o rechazar cada solicitud.
+					</p>
+					<span class="image fit"><img src="images/Aprobaciones.png" alt="Pantalla de aprobación de contratos" /></span>
+
+					<h3>Reportes</h3>
+					<p>
+						El módulo de reportes ofrece una visión analítica de la organización mediante
+						gráficos sobre el gasto en salarios, nuevos contratos realizados en un periodo
+						y otras métricas relevantes, con posibilidad de exportar la información a PDF.
+					</p>
+					<span class="image fit"><img src="images/Reportes.png" alt="Reportes con gráficos de salarios y contratos" /></span>
+					<span class="image fit"><img src="images/Reportes_2.png" alt="Reportes con métricas adicionales" /></span>
+
+					<h3>Auditoría</h3>
+					<p>
+						La aplicación registra automáticamente todos los cambios realizados: qué se
+						modificó, cuándo y quién lo hizo. Esto permite mantener una trazabilidad
+						completa de la actividad dentro del sistema.
+					</p>
+					<span class="image fit"><img src="images/Auditoria.png" alt="Registro de auditoría de cambios" /></span>
+
+					<h3>Perfil de usuario</h3>
+					<p>
+						Cada usuario autenticado dispone de una página de perfil donde puede consultar
+						y gestionar su información personal dentro de la aplicación.
+					</p>
+					<span class="image fit"><img src="images/Perfil.png" alt="Página de perfil del usuario" /></span>
+
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer" class="wrapper alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>&copy; Óscar Luque Porca. All rights reserved.</li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

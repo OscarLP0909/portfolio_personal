@@ -1,94 +1,104 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Weather App – Óscar Luque Porca</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Weather App: aplicación web que muestra el clima en tiempo real de cualquier ciudad del mundo." />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<!-- Header -->
-		<header id="header">
-			<a href="index.html" class="title">Óscar Luque Porca</a>
-			<nav>
-				<ul>
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="weather.html" class="active">Weather App</a></li>
-					<li><a href="f1_project.html">F1 Project</a></li>
-					<li><a href="to-do-list.html">TO-DO List</a></li>
-				</ul>
-			</nav>
-		</header>
+<head>
+	<title>Weather App – Óscar Luque Porca</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description"
+		content="Weather App: aplicación web que muestra el clima en tiempo real de cualquier ciudad del mundo." />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
 
-		<!-- Wrapper -->
-		<div id="wrapper">
+<body class="is-preload">
 
-			<!-- Main -->
-			<section id="main" class="wrapper">
-				<div class="inner">
-					<h1 class="major">Weather App</h1>
+	<!-- Header -->
+	<header id="header">
+		<a href="index.html" class="title">Óscar Luque Porca</a>
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="weather.html" class="active">Weather App</a></li>
+				<li><a href="f1_project.html">F1 Project</a></li>
+				<li><a href="to-do-list.html">TO-DO List</a></li>
+				<li><a href="empleados.html">Gestión de Empleados</a></li>
 
-					<p>
-						Aplicación web que permite consultar el estado del tiempo en tiempo real de cualquier
-						ciudad del mundo. Desarrollada con HTML, CSS y JavaScript, consume una API meteorológica
-						externa para obtener datos actualizados al momento.
-					</p>
+			</ul>
+		</nav>
+	</header>
 
-					<h2>Tecnologías utilizadas</h2>
-					<ul>
-						<li><strong>HTML5 y CSS3</strong> – Estructura y estilos de la interfaz</li>
-						<li><strong>JavaScript (ES6+)</strong> – Lógica y consumo de la API</li>
-						<li><strong>API meteorológica externa</strong> – Fuente de datos climáticos en tiempo real</li>
-					</ul>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-					<h2>Funcionalidades</h2>
-
-					<h3>Búsqueda por ciudad</h3>
-					<p>
-						La pantalla principal presenta un buscador donde el usuario puede introducir el nombre
-						de cualquier ciudad del mundo para consultar su clima actual de forma inmediata.
-					</p>
-					<span class="image fit"><img src="images/index_weather.png" alt="Pantalla principal de la Weather App" /></span>
-
-					<h3>Datos meteorológicos detallados</h3>
-					<p>
-						Tras realizar la búsqueda, la aplicación muestra una tarjeta con los datos climáticos
-						más relevantes de la ciudad seleccionada:
-					</p>
-					<ul>
-						<li>Temperatura actual</li>
-						<li>Humedad relativa</li>
-						<li>Velocidad del viento</li>
-						<li>Presión atmosférica</li>
-						<li>Icono representativo del estado del cielo</li>
-					</ul>
-					<span class="image fit"><img src="images/weather_city.png" alt="Resultados del clima para una ciudad" /></span>
-
-				</div>
-			</section>
-
-		</div>
-
-		<!-- Footer -->
-		<footer id="footer" class="wrapper alt">
+		<!-- Main -->
+		<section id="main" class="wrapper">
 			<div class="inner">
-				<ul class="menu">
-					<li>&copy; Óscar Luque Porca. All rights reserved.</li>
+				<h1 class="major">Weather App</h1>
+
+				<p>
+					Aplicación web que permite consultar el estado del tiempo en tiempo real de cualquier
+					ciudad del mundo. Desarrollada con HTML, CSS y JavaScript, consume una API meteorológica
+					externa para obtener datos actualizados al momento.
+				</p>
+
+				<h2>Tecnologías utilizadas</h2>
+				<ul>
+					<li><strong>HTML5 y CSS3</strong> – Estructura y estilos de la interfaz</li>
+					<li><strong>JavaScript (ES6+)</strong> – Lógica y consumo de la API</li>
+					<li><strong>API meteorológica externa</strong> – Fuente de datos climáticos en tiempo real</li>
 				</ul>
+
+				<h2>Funcionalidades</h2>
+
+				<h3>Búsqueda por ciudad</h3>
+				<p>
+					La pantalla principal presenta un buscador donde el usuario puede introducir el nombre
+					de cualquier ciudad del mundo para consultar su clima actual de forma inmediata.
+				</p>
+				<span class="image fit"><img src="images/index_weather.png"
+						alt="Pantalla principal de la Weather App" /></span>
+
+				<h3>Datos meteorológicos detallados</h3>
+				<p>
+					Tras realizar la búsqueda, la aplicación muestra una tarjeta con los datos climáticos
+					más relevantes de la ciudad seleccionada:
+				</p>
+				<ul>
+					<li>Temperatura actual</li>
+					<li>Humedad relativa</li>
+					<li>Velocidad del viento</li>
+					<li>Presión atmosférica</li>
+					<li>Icono representativo del estado del cielo</li>
+				</ul>
+				<span class="image fit"><img src="images/weather_city.png"
+						alt="Resultados del clima para una ciudad" /></span>
+
 			</div>
-		</footer>
+		</section>
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+	</div>
 
-	</body>
+	<!-- Footer -->
+	<footer id="footer" class="wrapper alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; Óscar Luque Porca. All rights reserved.</li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
