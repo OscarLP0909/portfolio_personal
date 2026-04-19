@@ -21,6 +21,15 @@ Aplicación web que muestra el tiempo en cualquier parte del mundo, consumiendo 
 ### 🏎️ F1 Project
 Aplicación que muestra información sobre los pilotos de Fórmula 1 y los resultados de la última carrera, a través de una API de F1.
 
+### ✅ TO-DO List
+Aplicación fullstack de gestión de tareas con backend en Node.js y Express, persistencia de datos en base de datos y despliegue en Netlify y Render.
+ 
+### 👥 Gestión de Empleados
+Aplicación fullstack para la gestión integral de empleados y contratos, con sistema de roles, aprobaciones, reportes con gráficos, exportación a PDF y auditoría de cambios. Desarrollada con React, TypeScript, Node.js y MongoDB.
+ 
+### 🧹 Limpieza Pro
+Aplicación fullstack para la gestión integral de una empresa de servicios de limpieza. Incluye autenticación con JWT, sistema de roles y permisos, flujo completo de presupuestación, notificaciones automáticas por email, cron job para expiración de presupuestos y panel diferenciado para clientes, empleados y administradores. Desarrollada con React, TypeScript, Node.js y MySQL.
+
 
 ---
 
