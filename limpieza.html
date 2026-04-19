@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Limpieza Pro – Óscar Luque Porca</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Aplicación fullstack de gestión de servicios de limpieza con React, TypeScript, Node.js, Express y MySQL." />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="title">Óscar Luque Porca</a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="weather.html">Weather App</a></li>
+					<li><a href="f1_project.html">F1 Project</a></li>
+					<li><a href="to-do-list.html">TO-DO List</a></li>
+					<li><a href="empleados.html">Gestión de Empleados</a></li>
+					<li><a href="limpieza.html" class="active">Limpieza Pro</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<h1 class="major">Limpieza Pro</h1>
+
+					<p>
+						Aplicación web fullstack para la gestión integral de una empresa de servicios de limpieza.
+						Desarrollada con React y TypeScript en el frontend y Node.js con Express en el backend,
+						es el proyecto más completo del portfolio. Incorpora autenticación con JWT, sistema de roles
+						y permisos, gestión de trabajos con flujo de presupuestos, notificaciones por email
+						automáticas, paginación y un panel diferenciado para clientes, empleados y administradores.
+					</p>
+
+					<h2>Tecnologías utilizadas</h2>
+					<ul>
+						<li><strong>Frontend:</strong> React, TypeScript, TailwindCSS</li>
+						<li><strong>Backend:</strong> Node.js, Express.js, TypeScript</li>
+						<li><strong>Base de datos:</strong> MySQL</li>
+						<li><strong>Otras:</strong> JWT, Nodemailer, node-cron, Swagger, bcrypt</li>
+					</ul>
+
+					<h2>Funcionalidades</h2>
+
+					<h3>Dashboard</h3>
+					<p>
+						La pantalla principal ofrece un resumen visual del estado de la aplicación, con
+						indicadores clave sobre trabajos activos, clientes registrados y empleados disponibles,
+						permitiendo al administrador tener una visión global del negocio de un vistazo.
+					</p>
+					<span class="image fit"><img src="images/Dashboard_Limpieza.png" alt="Dashboard principal con resumen e indicadores" /></span>
+
+					<h3>Gestión de trabajos</h3>
+					<p>
+						El módulo de trabajos permite visualizar todos los servicios solicitados, con
+						información sobre el cliente, tipo de servicio, frecuencia, estado y precio.
+						Los administradores pueden asignar empleados y generar presupuestos directamente
+						desde este listado.
+					</p>
+					<span class="image fit"><img src="images/Trabajos_Limpieza.png" alt="Listado de trabajos" /></span>
+
+					<h3>Gestión de empleados</h3>
+					<p>
+						El módulo de empleados permite visualizar el listado completo del personal,
+						con opciones para dar de alta nuevos empleados, editar sus datos y gestionar
+						su disponibilidad. Cada empleado tiene acceso a su propio panel donde puede
+						consultar los trabajos que tiene asignados.
+					</p>
+					<span class="image fit"><img src="images/Empleados_Limpieza.png" alt="Listado de empleados" /></span>
+
+					<h3>Gestión de clientes</h3>
+					<p>
+						La aplicación incluye un módulo completo para la gestión de clientes, donde
+						se puede consultar el listado de clientes registrados, sus datos de contacto
+						y el historial de servicios contratados.
+					</p>
+					<span class="image fit"><img src="images/Clientes_Limpieza.png" alt="Listado de clientes" /></span>
+
+					<h3>Gestión de servicios</h3>
+					<p>
+						Los administradores pueden gestionar los tipos de servicio disponibles, definiendo
+						el nombre y precio base de cada uno. El precio final del trabajo se calcula
+						automáticamente multiplicando el precio del servicio por el número de empleados asignados.
+					</p>
+					<span class="image fit"><img src="images/Servicios_Limpieza.png" alt="CRUD de servicios de limpieza" /></span>
+
+					<h3>Gestión de frecuencias</h3>
+					<p>
+						El sistema permite configurar las frecuencias de servicio disponibles para los clientes
+						al solicitar un trabajo, como servicios únicos, semanales, quincenales o mensuales,
+						adaptándose a las necesidades de cada cliente.
+					</p>
+					<span class="image fit"><img src="images/Frecuencias_Limpieza.png" alt="CRUD de frecuencias de limpieza" /></span>
+
+					<h3>Gestión de usuarios</h3>
+					<p>
+						El módulo de usuarios, accesible únicamente para administradores, permite gestionar
+						las cuentas del personal interno de la empresa, asignando roles de administrador
+						o gestor y controlando el acceso al sistema.
+					</p>
+					<span class="image fit"><img src="images/Usuarios_Limpieza.png" alt="CRUD de usuarios (solo admin)" /></span>
+
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer" class="wrapper alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>&copy; Óscar Luque Porca. All rights reserved.</li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
