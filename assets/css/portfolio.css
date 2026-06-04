@@ -301,7 +301,7 @@ a:hover { color: var(--white); }
    Section Headings (decorative underline)
    ---------------------------------------------------------------- */
 #two h2,
-#one h2 {
+#three h2 {
   font-size: 2.4em;
   font-weight: 700;
   letter-spacing: -0.01em;
@@ -310,7 +310,7 @@ a:hover { color: var(--white); }
 }
 
 #two h2::after,
-#one h2::after {
+#three h2::after {
   content: '';
   display: block;
   width: 2.8em;
@@ -431,21 +431,36 @@ h1.major::after {
 /* ----------------------------------------------------------------
    Project Cards (Features)
    ---------------------------------------------------------------- */
+#two {
+  padding: 5em 0;
+}
+
+#two > .inner > p {
+  font-size: 1.05em;
+  max-width: 44em;
+  margin-bottom: 2.5em;
+  color: rgba(148, 163, 184, 0.9);
+}
+
 .features {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.4em;
   background: transparent;
   border: none;
   border-radius: 0;
   margin: 0 0 2em 0;
+  align-items: stretch;
 }
 
+/* Each card is a flex column so the button always stays at the bottom */
 .features section {
+  display: flex !important;
+  flex-direction: column;
   background: rgba(139, 92, 246, 0.04);
   border: 1px solid rgba(139, 92, 246, 0.14) !important;
   border-radius: 1em;
-  padding: 2.5em 2.2em 1.6em 6.5em;
+  padding: 2em 1.8em 1.6em;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -468,75 +483,76 @@ h1.major::after {
 }
 
 .features section:hover {
-  transform: translateY(-7px);
+  transform: translateY(-6px);
   box-shadow:
-    0 24px 60px rgba(139, 92, 246, 0.18),
-    0 8px 24px rgba(0, 0, 0, 0.4);
+    0 20px 50px rgba(139, 92, 246, 0.18),
+    0 6px 20px rgba(0, 0, 0, 0.4);
   border-color: rgba(139, 92, 246, 0.32) !important;
   background: rgba(139, 92, 246, 0.07);
 }
 
 .features section:hover::before { opacity: 1; }
 
-/* Feature icons */
+/* Icon: inline at top, not absolutely positioned */
 .features section .icon.major {
+  position: static !important;
+  display: block;
+  font-size: 1.6em;
+  margin-bottom: 0.85em;
   background: var(--gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  filter: drop-shadow(0 0 12px rgba(139, 92, 246, 0.5));
+  filter: drop-shadow(0 0 10px rgba(139, 92, 246, 0.5));
   transition: filter 0.35s ease, transform 0.35s ease;
 }
 
 .features section:hover .icon.major {
-  filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.75));
-  transform: scale(1.08) rotate(-3deg);
+  filter: drop-shadow(0 0 18px rgba(139, 92, 246, 0.75));
+  transform: scale(1.1);
 }
 
 .features section h3 {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 1.1em;
+  font-size: 1.05em;
   font-weight: 600;
   color: var(--white);
   margin-bottom: 0.5em;
   letter-spacing: -0.01em;
 }
 
-/* Responsive: stack on small screens */
-@media screen and (max-width: 980px) {
+.features section > p {
+  flex: 1;
+  font-size: 0.9em;
+  line-height: 1.7;
+  color: rgba(148, 163, 184, 0.85);
+  margin-bottom: 1.4em;
+}
+
+/* Button always pinned to bottom */
+.features section ul.actions {
+  margin-top: auto;
+  margin-bottom: 0;
+  padding-top: 0;
+}
+
+/* 2 columns on tablet */
+@media screen and (max-width: 1100px) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 1 column on mobile */
+@media screen and (max-width: 600px) {
   .features {
     grid-template-columns: 1fr;
-    display: block;
-  }
-
-  .features section {
-    width: 100%;
-    margin-bottom: 1.2em;
-    border-top-width: 1px !important;
-    border-left-width: 1px !important;
   }
 }
 
 @media screen and (max-width: 736px) {
   .features section {
-    padding: 2.2em 1.5em 1.2em 5.2em;
-  }
-
-  .features section .icon.major {
-    left: 1.4em;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .features section {
-    padding: 2em 1.5em 1.2em 1.5em;
-  }
-
-  .features section .icon.major {
-    position: relative;
-    left: 0;
-    top: 0;
-    margin-bottom: 0.5em;
+    padding: 1.8em 1.4em 1.4em;
   }
 }
 
@@ -717,4 +733,121 @@ hr { border-bottom-color: rgba(139, 92, 246, 0.12); }
 
 .spotlights > section > .content > .inner li {
   color: rgba(148, 163, 184, 0.88);
+}
+
+/* ----------------------------------------------------------------
+   Global Responsive Fixes (mobile-first)
+   ---------------------------------------------------------------- */
+
+/* Prevent horizontal overflow on all screen sizes */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Inner padding adjustments for tablets */
+@media screen and (max-width: 980px) {
+  .wrapper > .inner {
+    padding: 3em 2.5em;
+  }
+}
+
+/* Mobile: tighter padding and font scaling */
+@media screen and (max-width: 736px) {
+  .wrapper > .inner {
+    padding: 2.5em 1.5em;
+  }
+
+  #intro > .inner {
+    padding: 2em 1.5em;
+  }
+
+  #intro h1 {
+    font-size: 2.4em;
+    word-break: break-word;
+  }
+
+  #intro p {
+    font-size: 0.95em;
+  }
+
+  #two > .inner > p {
+    font-size: 1em;
+  }
+
+  #two h2,
+  #three h2 {
+    font-size: 1.9em;
+  }
+
+  /* Contact form: stack fields on mobile */
+  .split.style1 {
+    display: block !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .split.style1 > * {
+    border-left: none !important;
+    padding-left: 0 !important;
+    margin-bottom: 2em;
+  }
+
+  .fields {
+    grid-template-columns: 1fr !important;
+  }
+
+  .field.half {
+    width: 100% !important;
+  }
+
+  .tech-badges {
+    gap: 0.4em;
+  }
+
+  .tech-badge {
+    font-size: 0.62em;
+  }
+}
+
+/* Very small screens */
+@media screen and (max-width: 480px) {
+  .wrapper > .inner {
+    padding: 2em 1.2em;
+  }
+
+  #intro > .inner {
+    padding: 1.8em 1.2em;
+  }
+
+  #intro h1 {
+    font-size: 2em;
+  }
+
+  .availability-badge {
+    font-size: 0.58em;
+  }
+
+  .stat-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8em;
+  }
+
+  .stat-number {
+    font-size: 1.6em;
+  }
+
+  ul.actions {
+    flex-wrap: wrap;
+    gap: 0.6em;
+  }
+
+  ul.actions li {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  .button, button {
+    width: 100%;
+    text-align: center;
+  }
 }
